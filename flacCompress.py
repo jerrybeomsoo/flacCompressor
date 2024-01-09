@@ -1,14 +1,13 @@
-"""
-Usage
+# Usage
 
-For compression (Any file -> wav -> flac) : "flacCompress.py --compress|-C 8|16 <sampleRate> <file path>"
-Example : flacCompress.py --compress/-C/ 8 44100 C:\Users\user\Documents\test.txt
-Result : test.txt.flac at the same directory of flacCompress.py
+# For compression (Any file -> wav -> flac) : "flacCompress.py --compress|-C 8|16 <sampleRate> <file path>"
+# Example : flacCompress.py --compress/-C/ 8 44100 C:\Users\user\Documents\test.txt
+# Result : test.txt.flac at the same directory of flacCompress.py
 
-For decompression (flac -> wav -> original file) : "flacCompress.py --decompress|-D <file path>"
-Example : flacCompress.py --decompress/-D C:\Users\user\Documents\test.txt.flac
-Result : test.txt at the same directory of flacCompress.py
-"""
+# For decompression (flac -> wav -> original file) : "flacCompress.py --decompress|-D <file path>"
+# Example : flacCompress.py --decompress/-D C:\Users\user\Documents\test.txt.flac
+# Result : test.txt at the same directory of flacCompress.py
+
 
 import sys, os
 from pathlib import Path
