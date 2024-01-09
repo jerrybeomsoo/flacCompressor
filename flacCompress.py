@@ -61,7 +61,7 @@ class wavfile:
 
 
 if not((len(sys.argv) == 3) or (len(sys.argv) == 5)):
-    print("Invalid number of arguments\n")
+    print("Invalid number of arguments.\n")
     sys.exit()
 
 compressMode = None
@@ -71,19 +71,19 @@ if sys.argv[1] == "--compress" or sys.argv[1] == "-C":
     file_path = sys.argv[4]
     bitDepth = int(sys.argv[2])
     if not((bitDepth == 8) or (bitDepth == 16)):
-        print("Invalid bit depth\n")
+        print("Invalid bit depth.\n8 or 16 is allowed as bit depth.\n")
         sys.exit()
     sampleRate = int(sys.argv[3])
 elif sys.argv[1] == "--decompress" or sys.argv[1] == "-D":
     compressMode = False
     file_path = sys.argv[2]
 else: 
-    print("Invalid arguments")
+    print("Invalid arguments.")
     print("Usage\nfor compression: flacCompress.py --compress|-C 8|16 <sampleRate> <file path>\nfor decompression: flacCompress.py --decompress|-D <file path>\n")
     sys.exit()
     
 if os.path.exists(file_path) == False:
-    print("File does not exist\n")
+    print("File does not exist.\n")
     sys.exit()
     
 fileSize = os.path.getsize(file_path)
